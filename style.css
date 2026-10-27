@@ -1,0 +1,21 @@
+
+:root{--bg:#000;--hair:#333A37;--ink:#EEF3F1;--muted:#AAB4B0;--accent:#7EC9AF;--amber:#EEBB58}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Hiragino Sans","Hiragino Kaku Gothic ProN","Segoe UI",system-ui,sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 16px 80px}
+a{color:var(--accent)}
+header{display:flex;align-items:center;gap:12px;margin-bottom:40px;flex-wrap:wrap}
+header img{width:48px;height:48px;border-radius:11px;display:block}
+header b{font-size:19px;font-weight:600}
+nav{margin-left:auto;font-size:14px}nav a{color:var(--muted);text-decoration:none;margin-left:12px}nav a[aria-current]{color:var(--ink)}
+h1{font-size:32px;line-height:1.2;font-weight:600;margin:0 0 12px;text-wrap:balance}
+h2{font-size:19px;font-weight:600;margin:32px 0 6px}
+p{color:var(--muted);max-width:68ch;margin:0 0 12px}
+.scale{position:relative;height:40px;margin:28px 0 32px;
+ background:
+  repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 48px) 0 0/100% 15px no-repeat,
+  linear-gradient(var(--hair),var(--hair)) 0 19px/100% 1px no-repeat,
+  repeating-linear-gradient(90deg,var(--amber) 0 2px,transparent 2px 48px) 20px 24px/100% 15px no-repeat;
+ -webkit-mask:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent);mask:linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent)}
+.scale::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:var(--accent)}
+footer{margin-top:56px;font-size:14px;color:var(--muted)}
